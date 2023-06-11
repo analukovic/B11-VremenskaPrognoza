@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/style.css">
+    <title>Vremeska prognoza</title>
+</head>
+<body>
+    <header>
+        <h1>Turistička agencija "Planinar"</h1>
+        <div class = "navigacioni">
+            <a href="./index.html">Početna</a><a href="./pages/Oautoru.html">O autoru</a><a href="./pages/uputstvo.html"> Uputstvo</a>
+        </div>
+    </header>
+    <!-- izbor gradova -->
+    <section>
+        <div>
+            <select id="izbor" onchange="prognoza()">
+                <option value="beograd">Beograd</option>
+                <option value="cacak">Čačak</option>
+                <option value="dimitrovgrad">Dimitrovgrad</option>
+                <option value="jagodina">Jagodina</option>
+                <option value="kladovo">Kladovo</option>
+                <option value="kopaonik">Kopaonik</option>
+                <option value="kraljevo">Kraljevo</option>
+                <option value="kragujevac">Krgujevac</option>
+                <option value="lebane">Lebane</option>
+                <option value="loznica">Loznica</option>
+                <option value="negotin">Negotin</option>
+                <option value="noviPazar">Novi Pazar</option>
+                <option value="Vranje">Vranje</option>
+            </select>
+        </div>
+        <br>
+        <iframe src="https://naslovi.net/vremenska-prognoza/beograd" id ="selekcija" width="370px" height="500px"></iframe>
+    </section>
+
+    <script src="./js/main.js"></script>
+</body>
+</html>
